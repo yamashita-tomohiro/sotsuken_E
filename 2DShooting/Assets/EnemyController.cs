@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 144; //FPSÇ144Ç…ê›íË
-        this.fallSpeed = 0.01f + 0.1f * Random.value;
+        this.fallSpeed = 0.03f + 0.1f * Random.value;
     }
 
     // Update is called once per frame
