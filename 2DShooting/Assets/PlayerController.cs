@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 144; //FPSÇ144Ç…ê›íË
-        //yamamotoso
+        
     }
 
     // Update is called once per frame
