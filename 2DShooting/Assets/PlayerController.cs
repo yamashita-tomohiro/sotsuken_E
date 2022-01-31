@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour   
 {
     public GameObject bulletPrefab;
+    public float speed;
 
     // Update is called once per frame
     void Update()
@@ -24,5 +25,14 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         }
+
+        float moveX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        float moveY = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+
+        transform.position = new Vector2(
+             //ƒGƒŠƒAŽw’è‚µ‚ÄˆÚ“®‚·‚é
+             Mathf.Clamp(transform.position.x + moveX, -2.5f, 2.5f),
+             Mathf.Clamp(transform.position.y + moveY, -4.5f, 4.5f)
+             );
     }
 }
