@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 144; //FPS‚ğ144‚Éİ’è
         this.fallSpeed = 0.01f + 0.1f * Random.value;
     }
 

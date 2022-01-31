@@ -7,6 +7,11 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public float speed;
 
+    void Start()
+    {
+        Application.targetFrameRate = 144; //FPSÇ144Ç…ê›íË
+    }
+
     // Update is called once per frame
     void Update()
     {

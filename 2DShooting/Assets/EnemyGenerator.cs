@@ -9,6 +9,7 @@ public class EnemyGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 144; //FPS‚ğ144‚Éİ’è
         InvokeRepeating("GenEnemy", 1, 1);
     }
 
