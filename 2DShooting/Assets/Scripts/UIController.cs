@@ -7,6 +7,12 @@ public class UIController : MonoBehaviour
 {
     int score = 0;
     GameObject scoreText;
+    GameObject gameOverText;
+
+    public void GameOver()
+    {
+        this.gameOverText.GetComponent<Text>().text = "GameOver";
+    }
 
     public void AddScore()
     {
@@ -17,6 +23,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         this.scoreText = GameObject.Find("Score");
+        this.gameOverText = GameObject.Find("GameOver");
     }
 
     // Update is called once per frame
