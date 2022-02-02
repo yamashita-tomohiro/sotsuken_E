@@ -23,8 +23,16 @@ public class EnemyController : MonoBehaviour
        
         if (transform.position.y < -5.5f)
         {
-            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Player")
+        {
+            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
+        }
+    }
+
 }

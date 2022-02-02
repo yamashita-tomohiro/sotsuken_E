@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    int zanki = 3;
     int score = 0;
     GameObject scoreText;
     GameObject gameOverText;
+    GameObject zankiText;
 
     public void GameOver()
     {
@@ -19,16 +21,23 @@ public class UIController : MonoBehaviour
         this.score += 10;
     }
 
+    public void AddZanki()
+    {
+        this.zanki -= 1;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         this.scoreText = GameObject.Find("Score");
         this.gameOverText = GameObject.Find("GameOver");
+        this.zankiText = GameObject.Find("Zanki");
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.GetComponent<Text>().text = "Score:" + score.ToString("D4");
+        scoreText.GetComponent<Text>().text = "Score:" + score.ToString("D3");
+        zankiText.GetComponent<Text>().text = "Zanki:" + zanki.ToString("D2");
     }
 }
