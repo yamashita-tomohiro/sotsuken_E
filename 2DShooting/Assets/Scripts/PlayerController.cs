@@ -6,11 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float speed;
+    private AudioSource sound01; //î≠ñCâπ
 
     void Start()
     {
         Application.targetFrameRate = 144; //FPSÇ144Ç…ê›íË
-        
+        sound01 = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +31,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            //î≠ñCâπ
+            sound01.PlayOneShot(sound01.clip);
+
         }
 
         float moveX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;

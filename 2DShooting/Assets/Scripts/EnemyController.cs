@@ -34,5 +34,4 @@ public class EnemyController : MonoBehaviour
             GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
         }
     }
-
 }
