@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float speed;
-    private AudioSource sound01; //î≠ñCâπ
+    private AudioSource bulletSE; //î≠ñCSE
 
     void Start()
     {
         Application.targetFrameRate = 144; //FPSÇ144Ç…ê›íË
-        sound01 = GetComponent<AudioSource>();
+        bulletSE= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             //î≠ñCâπ
-            sound01.PlayOneShot(sound01.clip);
+            bulletSE.PlayOneShot(bulletSE.clip);
 
         }
 
