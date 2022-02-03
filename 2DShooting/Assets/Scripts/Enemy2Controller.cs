@@ -33,7 +33,6 @@ public class Enemy2Controller : MonoBehaviour
         if (coll.gameObject.tag == "Player")
         {
             GameObject.Find("Canvas").GetComponent<UIController>().AddZanki();
-            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
         }
     }
 

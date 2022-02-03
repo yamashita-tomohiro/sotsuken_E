@@ -24,6 +24,10 @@ public class UIController : MonoBehaviour
     public void AddZanki()
     {
         this.zanki -= 1;
+        if (zanki <= 0)
+        {
+            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
+        }
     }
 
     // Start is called before the first frame update
