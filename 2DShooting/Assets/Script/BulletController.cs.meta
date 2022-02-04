@@ -1,9 +1,11 @@
 fileFormatVersion: 2
-guid: 67194c47c681c264db96492064b70542
+guid: a8d323bee2a43d84d954a0e359895bf0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - explosionPrefab: {instanceID: 0}
+  - zombiSE: {fileID: 8300000, guid: 7215dfc9dc4f6ab4b92f5ceef35a0932, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -349,7 +349,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &570427704
 PrefabInstance:
@@ -360,7 +360,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7419685303289711197, guid: 342d06b0bbe0b0643b354746dce9b26f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7419685303289711197, guid: 342d06b0bbe0b0643b354746dce9b26f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,63 +408,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 342d06b0bbe0b0643b354746dce9b26f, type: 3}
---- !u!1001 &697091437
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 9126102100358291487, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_Name
-      value: bulletPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.06626071
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.1384826
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126102100358291490, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c3c54339ae8649c46b35640f3a852069, type: 3}
 --- !u!1 &1205953944
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,15 +496,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1511821437387273547, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511821437387273547, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511821437387273547, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1511821437387273547, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
       propertyPath: m_LocalPosition.x
@@ -606,10 +541,6 @@ PrefabInstance:
     - target: {fileID: 1511821437387273550, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
       propertyPath: m_Name
       value: EnemyPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165573954886972983, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
-      propertyPath: m_Mass
-      value: 0.72382295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9d950aa2c4d914986cf106282bc798, type: 3}
@@ -656,7 +587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1581776492
 MonoBehaviour:
@@ -688,7 +619,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 38319e223c78d4d42a1b09e2025893e4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -868,7 +799,7 @@ RectTransform:
   - {fileID: 239378206}
   - {fileID: 1205953945}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -975,7 +906,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8605917417476296529, guid: 14a0a6eba30e58040b6e5c7607c890a8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605917417476296529, guid: 14a0a6eba30e58040b6e5c7607c890a8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605917417476296529, guid: 14a0a6eba30e58040b6e5c7607c890a8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8605917417476296529, guid: 14a0a6eba30e58040b6e5c7607c890a8, type: 3}
       propertyPath: m_LocalPosition.x

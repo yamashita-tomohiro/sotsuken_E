@@ -5,6 +5,9 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public GameObject explosionPrefab;  //爆発エフェクトのPrefab
+    // 効果音
+    public AudioClip se;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +26,7 @@ public class BulletController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D coll)
+   void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Enemy001")
         {
@@ -34,8 +37,11 @@ public class BulletController : MonoBehaviour
             //爆発エフェクトを生成する
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-            Destroy(coll.gameObject);
-            Destroy(gameObject);
+            // 効果音再生
+            AudioSource.PlayClipAtPoint(se, new Vector3(0.0f, 0.0f, -5.0f));
+
+            Destroy(coll.gameObject);  //ぶつかった相手を破壊
+            Destroy(gameObject);       //弾を破壊
             
         }
     }
