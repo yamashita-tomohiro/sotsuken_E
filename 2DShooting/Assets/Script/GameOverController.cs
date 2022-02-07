@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using UnityEngine.UIController;
 
 public class GameOverController : MonoBehaviour
 {
     public void SwitchScene()
     {
-        //SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
     }
 
     // Start is called before the first frame update
