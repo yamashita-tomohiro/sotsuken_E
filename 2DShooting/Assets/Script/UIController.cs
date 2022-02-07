@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class UIController : MonoBehaviour
 {
     int zanki = 3;
@@ -27,6 +28,10 @@ public class UIController : MonoBehaviour
         if (zanki <= 0)
         {
             GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
+            //if(zanki<=-1)
+            //{
+            //SceneManager.LoadScene("GameOverScene", LoadSceneMode.Single);
+            //}
         }
     }
 
