@@ -28,6 +28,10 @@ public class UIController : MonoBehaviour
         if (zanki <= 0)
         {
             GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
+            //if(zanki<=-1)
+            //{
+            //SceneManager.LoadScene("GameOverScene", LoadSceneMode.Single);
+            //}
         }
     }
 
