@@ -7,7 +7,7 @@ public class GameOverController : MonoBehaviour
 {
     public void SwitchScene()
     {
-        //SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
     }
 
     // Start is called before the first frame update
