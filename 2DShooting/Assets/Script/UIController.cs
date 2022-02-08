@@ -42,6 +42,7 @@ public class UIController : MonoBehaviour
         this.scoreText = GameObject.Find("Score");
         this.gameOverText = GameObject.Find("GameOver");
         this.zankiText = GameObject.Find("Zanki");
+
     }
 
     // Update is called once per frame
