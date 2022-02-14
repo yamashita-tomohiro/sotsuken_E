@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using UnityEngine.UIController;
+//using UnityEngine.UIController.cs;
 
 public class GameOverController : MonoBehaviour
 {
+    //UIController scoree;
+    //GameObject score2 = GameObject.Find("Result");
+    //UIController scoree = score2.GetComponent();
 
     GameObject resultText;
 
@@ -23,5 +26,6 @@ public class GameOverController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //resultText.GetComponent<Text>().text = "Score:" + score.ToString("D3");
     }
 }
