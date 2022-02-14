@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
+
+    GameObject resultText;
+
     public void SwitchScene()
     {
         SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
@@ -14,12 +17,11 @@ public class GameOverController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.resultText = GameObject.Find("Result");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
