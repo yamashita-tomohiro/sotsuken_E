@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player001")
         {
             GameObject.Find("Canvas").GetComponent<UIController>().AddZanki();
         }
