@@ -12,8 +12,6 @@ public class UIController : MonoBehaviour
     GameObject scoreText;
     GameObject gameOverText;
     GameObject zankiText;
- 
-
 
     public void GameOver()
     {
@@ -44,7 +42,6 @@ public class UIController : MonoBehaviour
         this.scoreText = GameObject.Find("Score");
         this.gameOverText = GameObject.Find("GameOver");
         this.zankiText = GameObject.Find("Zanki");
-
     }
 
     // Update is called once per frame
@@ -52,6 +49,5 @@ public class UIController : MonoBehaviour
     {
         scoreText.GetComponent<Text>().text = "Score:" + score.ToString("D3");
         zankiText.GetComponent<Text>().text = "Zanki:" + zanki.ToString("D2");
-
     }
 }

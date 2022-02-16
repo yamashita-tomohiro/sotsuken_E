@@ -18,17 +18,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //左移動
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(-0.1f, 0, 0);
         }
         //右移動
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(0.1f, 0, 0);
         }
         //スペースキーが押されたら弾発射
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             //発砲音
