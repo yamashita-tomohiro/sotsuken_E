@@ -9,6 +9,7 @@ public class BulletController : MonoBehaviour
     public AudioClip se;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class BulletController : MonoBehaviour
 
             // 衝突したときにスコアを更新する
             GameObject.Find("Canvas").GetComponent<UIController>().AddScore();
+            
 
             //爆発エフェクトを生成する
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
