@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D coll)
